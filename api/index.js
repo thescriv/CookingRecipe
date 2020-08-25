@@ -1,11 +1,11 @@
-const { startApi, stopApi } = require('./api')
+const { startApi, stopApi } = require('./src/api')
 
 const config = require('./config')
 
 async function start() {
   console.log('starting api')
 
-  await startApi(config.API_PORT)
+  await startApi(config.PORT)
 }
 
 async function stop() {

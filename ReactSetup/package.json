@@ -1,0 +1,32 @@
+{
+  "name": "",
+  "description": "A react setup",
+  "author": "thescriv",
+  "version": "1.0.0",
+  "license": "ISC",
+  "scripts": {
+    "cleanup": "rm -rf .cache dist",
+    "dev": "parcel $npm_package_configReact_entrypoints -p $npm_package_configReact_port",
+    "build": "parcel build $npm_package_configReact_entrypoints",
+    "start": "parcel ./dist/index.html"
+  },
+  "configReact": {
+    "entrypoints": "public/index.html",
+    "port": "3000"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
