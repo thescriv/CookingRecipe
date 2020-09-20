@@ -6,4 +6,6 @@ const db_url = `${config.DB_USERNAME}:${config.DB_PASSWORD}@${config.DB_URL}:${c
 
 const db = monk(db_url)
 
+db.recipes = db.get('recipe')
+
 module.exports = { db }
